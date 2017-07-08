@@ -1,0 +1,24 @@
+{
+	"match": "(@[apres])(?:(\\[)(?:([\\w|_]+)(=!?)((?:[\\w]+)|(?:-?[0-9]))(?:,|, )?)+)(\\])*",
+	"captures": {
+		"1": {
+			"name": "entity.name.tag.mcfunction",
+		},
+		"2": {
+			"name": "punctuation.definition.string.begin.mcfunction",
+		},
+		"3": {
+			"name": "entity.name.type.mcfunction",
+		},
+		"4": {
+			"name": "keyword.operator.mcfunction",
+		},
+		"5": {
+			"name": "entity.name.tag.mcfunction",
+		},
+		"6": {
+			"name": "punctuation.definition.string.end.mcfunction"
+		}
+	},
+	"name": "meta.function.mcfunction"
+}

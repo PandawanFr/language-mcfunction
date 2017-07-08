@@ -2,22 +2,22 @@
 "name": "MCFunction"
 "fileTypes": ["mcfunction"]
 "patterns": [
+    {
+      "match": "(@[apres])(?:(\\[)((?:[\\w|_]+=(?:!)?(?:(?:\\w)*|(?:-)[0-9]*)(?:,|, )?)+)(\\]))*"
+      "captures":
+        "1":
+          "name": "entity.name.tag.mcfunction"
+        "2":
+          "name": "punctuation.definition.string.begin.mcfunction"
+        "3":
+          "name": "entity.name.type.mcfunction"
+        "4":
+          "name": "punctuation.definition.string.end.mcfunction"
+      "name": "meta.function.mcfunction"
+  }
   {
     "match": "(([-~]?([0-9]+\\.?[0-9]*)|(\\.[0-9]+))|~)"
     "name": "constant.numeric.mcfunction"
-  }
-  {
-    "match": "(@[apres])(?:(\\[)((?:[\\w|_]+=(?:!)?(?:(?:\\w)*|(?:-)[0-9]*)(?:,|, )?)+)(\\]))*"
-    "captures":
-      "1":
-        "name": "entity.name.tag.mcfunction"
-      "2":
-        "name": "punctuation.definition.string.begin.mcfunction"
-      "3":
-        "name": "keyword.operator.mcfunction"
-      "4":
-        "name": "punctuation.definition.string.end.mcfunction"
-    "name": "meta.function.mcfunction"
   }
   {
     "match": "(?:^|\n|\r\n)\/"
@@ -61,7 +61,7 @@
   }
   {
     "match": "\\b(true|false)\\b"
-    "name": "variable.parameter.mcfunction"
+    "name": "constant.language.mcfunction"
   }
   {
     "match": "\\b(detect|destroy|hollow|keep|outline|if|unless)\\b"
